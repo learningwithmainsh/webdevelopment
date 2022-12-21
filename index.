@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish Curiculm</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ramabhadra&display=swap" rel="stylesheet">
+    <style>
+        /* CSS reset*/
+        
+        body {
+            color: blue;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/manish.jpeg');
+            font-family: 'Ramabhadra', sans-serif;
+        }
+        
+        .left {
+            border: 2px solid red;
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+        }
+        
+        .left img {
+            width: 75px;
+            filter: invert(0);
+        }
+        
+        .left div {
+            text-align: center;
+        }
+        
+        .mid {
+            border: 2px solid yellow;
+            display: block;
+            width: 50%;
+            margin: 0px auto;
+        }
+        
+        .right {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            display: inline-block;
+            border: 2px solid yellow;
+            height: 65px;
+        }
+        
+        .navbar {
+            display: inline-block;
+        }
+        
+        .navbar li a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 14px;
+        }
+        
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: green;
+        }
+        
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+        
+        .btn {
+            margin: 12px 10px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: solid yellow;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+        .right btn :hover {
+            background-color: green;
+        }
+        
+        .container {
+            border: 2px solid white;
+            margin: 101px 15px;
+            padding: 35px;
+            width: 20%;
+            height: 250px;
+            border-radius: 28px;
+            background-color: green;
+            text-align: center;
+            font-size: small;
+        }
+        
+        .form group input {
+            display: block;
+            text-align: center;
+            width: 448px;
+            padding: 9px;
+            border: solid black;
+            height: 50px;
+            color: red;
+            margin: 3px auto;
+            font: 27px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for log -->
+        <div class="left">
+            <div>MANISH PANDEY</div>
+            <img src="img/manish1.png.jpg" alt="">
+
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="home.html" class="active" target="blank">Home</a></li>
+                <li> <a href="https://github.com/Manishgenius/branchingtutorial.git" target="blank">github</a></li>
+                <li> <a href="https://www.linkedin.com/in/manish-kumar-pandey-b81608109" class="active" target="blank">linkedin</a></li>
+                <li> <a href="https://www.facebook.com/pandey.manish.106" target="blank">facebook</a></li>
+                <li> <a href="https://twitter.com/mnshkmrpnd" target="blank">twitter</a></li>
+                <li> <a href="https://www.instagram.com/manish_bagi" target="blank">instagram</a></li>
+
+            </ul>
+
+        </div>
+        <!-- right box for button  -->
+        <div class="right">
+            <button class="btn"><a href="call.html" class="active" target="blank">Call</a> </button>
+            <button class="btn"><a href="email.html" class="active" target="blank">Email</a> </button>
+
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Enter Your Details</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Contact">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <button class="btn">Submit</button>
+
+        </form>
+
+
+
+    </div>
+</body>
+
+</html>
